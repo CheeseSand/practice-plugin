@@ -1,0 +1,12 @@
+name: ${pluginName}
+version: ${version}
+main: ${group}.${packageName}.${aliasName}Plugin
+api-version: '1.21.4'
+libraries:
+  - org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}
+  - org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}
+  - org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutineVersion}
+  - org.jetbrains.kotlinx:kotlinx-serialization-json:${serializationVersion}
+commands:
+  test:
+    description: 한글 태스트 및 명령어 테스트
