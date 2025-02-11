@@ -27,6 +27,11 @@ class PracticePlugin : JavaPlugin(), Listener {
         daydream.applyCommand("invtest", commandMap)
         daydream.applyCommand("datatest", commandMap)
 
+        saveDefaultConfig()
+
+        logger.warning("test text (it`s not warning)")
+        logger.severe("test text (it`s not severe)")
+
         logger.info("PracticePlugin Enabled!")
     }
 
